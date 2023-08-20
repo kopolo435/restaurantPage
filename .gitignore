@@ -1,2 +1,5 @@
 #Ignora los archivos de los modulos
 node_modules/
+
+#Ignora los archivos de dist
+dist/
