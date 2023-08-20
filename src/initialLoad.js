@@ -1,7 +1,5 @@
 import breakfast from './breakfast.jpg'
 
-const content = document.getElementById("content");
-
 function loadTitle(){
     const titleElement = document.createElement("h2");
     titleElement.textContent = "Bienvenidos a BestTaste";
@@ -20,7 +18,7 @@ function loadDescription(){
     return descriptionElement;
 }
 
-function loadContent(){
+function loadContent(content){
     content.appendChild(loadTitle());
     content.appendChild(loadImage());
     content.appendChild(loadDescription());
