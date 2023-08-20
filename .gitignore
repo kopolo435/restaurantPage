@@ -3,3 +3,6 @@ node_modules/
 
 #Ignora los archivos de dist
 dist/
+
+#Ignora archivos de creditos
+creditos.txt
