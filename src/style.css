@@ -26,6 +26,12 @@ main{
     display: flex;
 }
 
+nav{
+    width: 100px;
+    height: 100%;
+    background-color: aqua;
+}
+
 h2{
     color: red;
 }
