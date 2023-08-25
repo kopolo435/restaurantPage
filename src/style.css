@@ -32,6 +32,12 @@ nav{
     background-color: aqua;
 }
 
+#content{
+    flex: 1;
+    height: 100%;
+    background-color: beige;
+}
+
 h2{
     color: red;
 }
