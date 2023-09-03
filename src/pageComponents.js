@@ -25,6 +25,9 @@ function loadSocials(){
     const socialsContainer = document.createElement("div");
 
     socialsContainer.setAttribute("id","socials");
+    facebookIcon.setAttribute("alt","Link para ir al facebook del restaurante");
+    twitterIcon.setAttribute("alt","Link para ir al twitter del restaurante");
+    instagramIcon.setAttribute("alt","Link para ir al instagram del restaurante");
 
     socialsContainer.appendChild(facebookIcon);
     socialsContainer.appendChild(twitterIcon);
