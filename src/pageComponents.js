@@ -37,8 +37,6 @@ function loadSocials(){
 
 }
 
-document.body.appendChild(loadHeader());
-
 function createNavButtons(buttonName){
     const button = document.createElement("button");
     const buttonId = buttonName.toLowerCase()+"Btn";
@@ -54,7 +52,7 @@ function loadNavBar(){
     return navBar;
 }
 
-document.body.appendChild(loadNavBar());
+
 
 function createFooter(){
     const footer = document.createElement("footer");
@@ -65,4 +63,5 @@ function createFooter(){
     return footer;
 }
 
-document.body.appendChild(createFooter());
+
+export {createFooter,loadNavBar,loadHeader};
