@@ -6,3 +6,6 @@ dist/
 
 #Ignora archivos de creditos
 creditos.txt
+
+#Ignora archivo para probar javascript en el html
+testHtml.html
