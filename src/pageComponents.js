@@ -55,3 +55,14 @@ function loadNavBar(){
 }
 
 document.body.appendChild(loadNavBar());
+
+function createFooter(){
+    const footer = document.createElement("footer");
+    const creatorText = document.createElement("p");
+    creatorText.textContent = "Kopolo435";
+
+    footer.appendChild(creatorText);
+    return footer;
+}
+
+document.body.appendChild(createFooter());
