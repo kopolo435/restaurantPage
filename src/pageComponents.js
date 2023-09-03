@@ -38,3 +38,20 @@ function loadSocials(){
 }
 
 document.body.appendChild(loadHeader());
+
+function createNavButtons(buttonName){
+    const button = document.createElement("button");
+    const buttonId = buttonName.toLowerCase()+"Btn";
+    button.setAttribute("id",buttonId);
+    button.textContent = buttonName;
+    return button;
+}
+function loadNavBar(){
+    const navBar = document.createElement("nav");
+    navBar.appendChild(createNavButtons("Home"));
+    navBar.appendChild(createNavButtons("Menu"));
+    navBar.appendChild(createNavButtons("Contact"));
+    return navBar;
+}
+
+document.body.appendChild(loadNavBar());
