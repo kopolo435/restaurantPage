@@ -4,9 +4,18 @@ function loadHeader(){
 
     titleRestaurant.textContent="BestTaste";
 
+    header.appendChild(createRestaurantLogo());
     header.appendChild(titleRestaurant);
     header.appendChild(loadSocials());
     return header;
+}
+
+function createRestaurantLogo(){
+    const restaurantLogo = new Image();
+    restaurantLogo.setAttribute("id","mainLogo");
+    restaurantLogo.setAttribute("alt","Logo del restaurante");
+
+    return restaurantLogo;
 }
 
 function loadSocials(){
@@ -26,9 +35,3 @@ function loadSocials(){
 }
 
 document.body.appendChild(loadHeader());
-
-/*
-Imagen para el icono
-3 redes sociales
-nombre de las redes sociales
-*/
