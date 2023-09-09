@@ -71,4 +71,4 @@ function getMenuContainer(){
 
 menuController.createMenu(menuItems);
 
-export default getMenuContainer();
+export {getMenuContainer};
