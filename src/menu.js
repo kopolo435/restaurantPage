@@ -1,6 +1,6 @@
-const createPlate = (name,price,photoURl)=>{
+const createPlate = (name,description,price,photoURl)=>{
 
-    return{name,price,photoURl}
+    return{name,description,price,photoURl}
 }
 
 const menuItems = [["pollo",20.25,"url"],["arroz",10.23,"urlArroz"]];
@@ -9,7 +9,7 @@ const menuController = (()=>{
     const menu = [];
     const createMenu = (menuItems)=>{
         menuItems.forEach(plateInfo =>{
-            menu.push(createPlate(plateInfo[0],plateInfo[1],plateInfo[2]));
+            menu.push(createPlate(plateInfo[0],plateInfo[1],plateInfo[2],plateInfo[3]));
         });
     }
 
