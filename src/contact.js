@@ -38,15 +38,15 @@ function createContactImgDisplay(contact){
     const contactImg = new Image();
     contactImg.src = contact.photoURl;
     contactImg.setAttribute("class","contactPhoto");
-    contactImg.setAttribute("alt",`Contacto ${plate.name}`);
+    contactImg.setAttribute("alt",`Contacto ${contact.name}`);
     return contactImg;
 };
 
-function createPlateDescriptionDisplay(plate){
-    const plateDescription = document.createElement("p");
-    plateDescription.setAttribute("class","plateDescription");
-    plateDescription.textContent = plate.description;
-    return plateDescription;
+function createContactDescriptionDisplay(contact){
+    const contactDescription = document.createElement("p");
+    contactDescription.setAttribute("class","contactDescription");
+    contactDescription.textContent = contact.description;
+    return contactDescription;
 }
 
 function createPlateElement(plate){
