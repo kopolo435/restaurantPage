@@ -34,12 +34,12 @@ function createContactEmailDisplay(contact){
     return contactEmail;
 };
 
-function createPlateImgDisplay(plate){
-    const plateImg = new Image();
-    plateImg.src = plate.photoURl;
-    plateImg.setAttribute("class","platePhoto");
-    plateImg.setAttribute("alt",`Plato ${plate.name}`);
-    return plateImg;
+function createContactImgDisplay(contact){
+    const contactImg = new Image();
+    contactImg.src = contact.photoURl;
+    contactImg.setAttribute("class","contactPhoto");
+    contactImg.setAttribute("alt",`Contacto ${plate.name}`);
+    return contactImg;
 };
 
 function createPlateDescriptionDisplay(plate){
