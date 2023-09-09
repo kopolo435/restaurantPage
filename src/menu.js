@@ -41,3 +41,10 @@ function createPlateImgDisplay(plate){
     plateImg.setAttribute("alt",`Plato ${plate.name}`);
     return plateImg;
 };
+
+function createPlateDescriptionDisplay(plate){
+    const plateDescription = document.createElement("p");
+    plateDescription.setAttribute("class","plateDescription");
+    plateDescription.textContent = plate.description;
+    return plateDescription;
+}
