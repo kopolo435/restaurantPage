@@ -48,3 +48,27 @@ function createPlateDescriptionDisplay(plate){
     plateDescription.textContent = plate.description;
     return plateDescription;
 }
+
+function createPlateElement(plate){
+    const plateContainer = document.createElement("div");
+    plateContainer.setAttribute("class","plateContainer")
+    plateContainer.replaceChildren(createPlateNameDisplay(plate),
+        createPlateDescriptionDisplay(plate),
+        createPlatePriceDIsplay(plate),
+        createPlateImgDisplay(plate));
+    return plateContainer;
+}
+
+function getMenuContainer(){
+    const menuContainer = document.createElement("div");
+    menuContainer.setAttribute("class","menuContainer");
+    menuController.getMenu().forEach(plate =>{
+        menuContainer.appendChild(createPlateElement(plate));
+    })
+
+    return menuContainer;
+}
+
+menuController.createMenu(menuItems);
+
+export default getMenuContainer();
