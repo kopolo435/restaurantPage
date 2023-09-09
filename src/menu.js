@@ -20,6 +20,9 @@ const menuController = (()=>{
 
 })();
 
-function createPlateDescription(){
-    
-}
+function createPlateNameDisplay(plate){
+    const plateName = document.createElement("h3");
+    plateName.setAttribute("class","plateName");
+    plateName.textContent = plate.name;
+    return plateName;
+};
