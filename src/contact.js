@@ -27,11 +27,11 @@ function createContactNameDisplay(contact){
     return contactName;
 };
 
-function createPlatePriceDIsplay(plate){
-    const platePrice = document.createElement("p");
-    platePrice.setAttribute("class","platePrice");
-    platePrice.textContent = plate.price;
-    return platePrice;
+function createContactEmailDisplay(contact){
+    const contactEmail = document.createElement("p");
+    contactEmail.setAttribute("class","contactEmail");
+    contactEmail.textContent = contact.email;
+    return contactEmail;
 };
 
 function createPlateImgDisplay(plate){
