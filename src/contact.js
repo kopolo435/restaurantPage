@@ -49,14 +49,14 @@ function createContactDescriptionDisplay(contact){
     return contactDescription;
 }
 
-function createPlateElement(plate){
-    const plateContainer = document.createElement("div");
-    plateContainer.setAttribute("class","plateContainer")
-    plateContainer.replaceChildren(createContactNameDisplay(plate),
-        createPlateDescriptionDisplay(plate),
-        createPlatePriceDIsplay(plate),
-        createPlateImgDisplay(plate));
-    return plateContainer;
+function createContactElement(contact){
+    const contactContainer = document.createElement("div");
+    contactContainer.setAttribute("class","contactContainer")
+    contactContainer.replaceChildren(createContactNameDisplay(contact),
+        createContactDescriptionDisplay(contact),
+        createContactEmailDisplay(contact),
+        createContactImgDisplay(contact));
+    return contactContainer;
 }
 
 function getMenuContainer(){
