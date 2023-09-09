@@ -62,8 +62,8 @@ function createContactElement(contact){
 function getContactContainer(){
     const contactContainer = document.createElement("div");
     contactContainer.setAttribute("class","contactContainer");
-    contactListController.getMenu().forEach(contact =>{
-        contactContainer.appendChild(createPlateElement(contact));
+    contactListController.getContactList().forEach(contact =>{
+        contactContainer.appendChild(createContactElement(contact));
     })
 
     return contactContainer;
