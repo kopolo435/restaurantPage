@@ -16,7 +16,7 @@ const contactListController = (()=>{
     const getContactList = ()=>{
         return contactList;
     }
-    return {getContactList,createcreateContactListMenu};
+    return {getContactList,createContactList};
 
 })();
 
