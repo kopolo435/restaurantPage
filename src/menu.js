@@ -26,3 +26,10 @@ function createPlateNameDisplay(plate){
     plateName.textContent = plate.name;
     return plateName;
 };
+
+function createPlatePriceDIsplay(plate){
+    const platePrice = document.createElement("p");
+    platePrice.setAttribute("class","platePrice");
+    platePrice.textContent = plate.price;
+    return platePrice;
+};
