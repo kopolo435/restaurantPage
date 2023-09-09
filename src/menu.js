@@ -3,7 +3,7 @@ const createPlate = (name,description,price,photoURl)=>{
     return{name,description,price,photoURl}
 }
 
-const menuItems = [["pollo",20.25,"url"],["arroz",10.23,"urlArroz"]];
+const menuItems = [["pollo","Este plato es increible",20.25,"url"],["arroz","este plato tambien",10.23,"urlArroz"]];
 
 const menuController = (()=>{
     const menu = [];
