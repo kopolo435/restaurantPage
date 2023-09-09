@@ -1,4 +1,4 @@
-const createPerson = (name,description,email,photoURl)=>{
+const createContact = (name,description,email,photoURl)=>{
 
     return{name,description,email,photoURl}
 }
@@ -9,7 +9,7 @@ const contactListController = (()=>{
     const contactList = [];
     const createContactList = (contacts)=>{
         contacts.forEach(contactInfo =>{
-            contactList.push(createPerson(contactInfo[0],contactInfo[1],contactInfo[2],contactInfo[3]));
+            contactList.push(createContact(contactInfo[0],contactInfo[1],contactInfo[2],contactInfo[3]));
         });
     }
 
@@ -20,11 +20,11 @@ const contactListController = (()=>{
 
 })();
 
-function createPlateNameDisplay(plate){
-    const plateName = document.createElement("h3");
-    plateName.setAttribute("class","plateName");
-    plateName.textContent = plate.name;
-    return plateName;
+function createContactNameDisplay(contact){
+    const contactName = document.createElement("h3");
+    contactName.setAttribute("class","contactName");
+    contactName.textContent = contact.name;
+    return contactName;
 };
 
 function createPlatePriceDIsplay(plate){
@@ -52,7 +52,7 @@ function createPlateDescriptionDisplay(plate){
 function createPlateElement(plate){
     const plateContainer = document.createElement("div");
     plateContainer.setAttribute("class","plateContainer")
-    plateContainer.replaceChildren(createPlateNameDisplay(plate),
+    plateContainer.replaceChildren(createContactNameDisplay(plate),
         createPlateDescriptionDisplay(plate),
         createPlatePriceDIsplay(plate),
         createPlateImgDisplay(plate));
