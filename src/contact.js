@@ -59,16 +59,16 @@ function createContactElement(contact){
     return contactContainer;
 }
 
-function getMenuContainer(){
-    const menuContainer = document.createElement("div");
-    menuContainer.setAttribute("class","menuContainer");
-    menuController.getMenu().forEach(plate =>{
-        menuContainer.appendChild(createPlateElement(plate));
+function getContactContainer(){
+    const contactContainer = document.createElement("div");
+    contactContainer.setAttribute("class","contactContainer");
+    contactListController.getMenu().forEach(contact =>{
+        contactContainer.appendChild(createPlateElement(contact));
     })
 
-    return menuContainer;
+    return contactContainer;
 }
 
-menuController.createMenu(menuItems);
+contactListController.createContactList(contacts);
 
-export {getMenuContainer};
+export {getContactContainer};
