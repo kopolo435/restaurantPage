@@ -33,3 +33,11 @@ function createPlatePriceDIsplay(plate){
     platePrice.textContent = plate.price;
     return platePrice;
 };
+
+function createPlateImgDisplay(plate){
+    const plateImg = new Image();
+    plateImg.src = plate.photoURl;
+    plateImg.setAttribute("class","platePhoto");
+    plateImg.setAttribute("alt",`Plato ${plate.name}`);
+    return plateImg;
+};
