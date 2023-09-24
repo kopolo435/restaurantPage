@@ -14,10 +14,6 @@ document.body.appendChild(pageComponent.createFooter());
 
 initialLoad(divContent);
 
-
-divContent.replaceChildren();
-divContent.appendChild(contact.getContactContainer());
-
 const homeBtn = document.getElementById("homeBtn");
 const menuBtn = document.getElementById("menuBtn");
 const contactBtn = document.getElementById("contactBtn");
