@@ -6,11 +6,14 @@ import * as pageComponent from './pageComponents.js';
 
 const divContent = document.createElement("div");
 divContent.setAttribute("id","content");
+
 document.body.appendChild(pageComponent.loadHeader());
 document.body.appendChild(divContent); 
-initialLoad(divContent);
 document.body.appendChild(pageComponent.loadNavBar());
 document.body.appendChild(pageComponent.createFooter());
+
+initialLoad(divContent);
+
 
 divContent.replaceChildren();
 divContent.appendChild(contact.getContactContainer());
