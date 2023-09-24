@@ -18,4 +18,30 @@ initialLoad(divContent);
 divContent.replaceChildren();
 divContent.appendChild(contact.getContactContainer());
 
+const homeBtn = document.getElementById("homeBtn");
+const menuBtn = document.getElementById("menuBtn");
+const contactBtn = document.getElementById("contactBtn");
+
+function resetPageStatus(){
+    divContent.replaceChildren();
+    //Cambiar la clase a todos los botones a una donde su aspecto sea no elegido
+}
+
+homeBtn.addEventListener("click",()=>{
+    resetPageStatus();
+    initialLoad(divContent);
+    //cambiar la clase para el btn se vea escogido
+})
+
+menuBtn.addEventListener("click",()=>{
+    resetPageStatus();
+    divContent.appendChild(menu.getMenuContainer());
+    //cambiar la clase para el btn se vea escogido
+})
+
+contactBtn.addEventListener("click",()=>{
+    resetPageStatus();
+    divContent.appendChild(contact.getContactContainer());
+})
+
 console.log("Mi nombre es Samir Fanilla");
