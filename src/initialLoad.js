@@ -1,4 +1,4 @@
-import breakfast from './breakfast.jpg'
+import breakfast from './img/breakfast.jpg'
 
 function loadTitle(){
     const titleElement = document.createElement("h2");
