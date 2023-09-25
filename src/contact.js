@@ -1,9 +1,17 @@
+import chef from './img/chefPrincipal.jpg'
+import asistente from './img/asistente.jpg'
+import founder from './img/founder.jpg'
+import equipo from './img/equipo.jpg'
 const createContact = (name,description,email,photoURl)=>{
 
     return{name,description,email,photoURl}
 }
 
-const contacts = [["pollo","Este plato es increible",20.25,"url"],["arroz","este plato tambien",10.23,"urlArroz"]];
+const contacts = [["Fundador Kopolo435","Fundador del restaurante","",founder],
+["Cocinero Principal Jhon Titor","Este cocinero tiene más de 25 años de experiencia en la industria","correo1@gmail.com",chef],
+["Asistente principal","Sus habilidades mejoraran su estado","correo2@gmai.com",asistente],
+["Equipo a su servicio","Nuestro equipo siempre estara para servir a sus necesidades","correoDelaempresa@gmail.com",equipo],
+];
 
 const contactListController = (()=>{
     const contactList = [];
