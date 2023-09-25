@@ -10,12 +10,12 @@ const createPlate = (name,description,price,photoURl)=>{
     return{name,description,price,photoURl}
 }
 
-const menuItems = [["Maki Roll","Este plato es increible",20.25,makiRoll],
-["Sushi Balls","este plato tambien",10.23,sushiBall],
-["Bandeja de Sushi","este plato tambien",10.23,sushiBandeja],
-["Olla de Sushi","este plato tambien",10.23,sushiOlla],
-["Sushi naranja","este plato tambien",10.23,sushiNaranja],
-["Rollo de Sushi","este plato tambien",10.23,sushiRollo],
+const menuItems = [["Maki Roll","Un rollo de sushi con una mezcla de pescado fresco y aguacate.","20.25",makiRoll],
+["Sushi Balls","Bolas de sushi crujientes con relleno de camarones y salsa picante.","$16.99",sushiBall],
+["Bandeja de Sushi","Una variedad de sushi fresco en una bandeja elegante.","$24.75",sushiBandeja],
+["Olla de Sushi","Un plato de sushi al vapor con verduras frescas y salsa teriyaki.","$18.95",sushiOlla],
+["Sushi naranja","Sushi de salmón fresco con un toque de cítricos.","$14.99",sushiNaranja],
+["Rollo de Sushi","Un rollo de sushi clásico con aguacate, pepino y pescado.","$15.25",sushiRollo],
 ];
 
 const menuController = (()=>{
