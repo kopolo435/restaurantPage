@@ -1,9 +1,22 @@
+import makiRoll from './img/maki-roll.jpg'
+import sushiBall from  './img/sushi-balls.jpg'
+import sushiBandeja from './img/sushi-bandeja.jpg'
+import sushiOlla from './img/sushi-olla.jpg'
+import sushiNaranja from './img/sushi-rollo-naranja.jpg'
+import sushiRollo from './img/sushi-rollos.jpg'
+
 const createPlate = (name,description,price,photoURl)=>{
 
     return{name,description,price,photoURl}
 }
 
-const menuItems = [["pollo","Este plato es increible",20.25,"url"],["arroz","este plato tambien",10.23,"urlArroz"]];
+const menuItems = [["Maki Roll","Este plato es increible",20.25,makiRoll],
+["Sushi Balls","este plato tambien",10.23,sushiBall],
+["Bandeja de Sushi","este plato tambien",10.23,sushiBandeja],
+["Olla de Sushi","este plato tambien",10.23,sushiOlla],
+["Sushi naranja","este plato tambien",10.23,sushiNaranja],
+["Rollo de Sushi","este plato tambien",10.23,sushiRollo],
+];
 
 const menuController = (()=>{
     const menu = [];
