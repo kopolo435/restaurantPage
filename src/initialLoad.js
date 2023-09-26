@@ -4,11 +4,19 @@ const createSection = (title,description,image)=>{
     return {title,description,image}
 }
 
-const sectionArray = [["Bienvenidos a Best Taste","Descripcion Presentacion que hable del restaurante","Imagen edifico"],
+const sectionDataArray = [["Bienvenidos a Best Taste","Descripcion Presentacion que hable del restaurante","Imagen edifico"],
 ["Ubicacion","Descripcion de el mensaje de bienvenida","Imagen de shirakawa"],
 ["Apariencia Local","descripcion de que tan grandiosas son las instalaciones","imagen del bar"],
 ["Comida","descripcion de que tan grandiosa es la comida ","imagen de comida"],
 ]
+
+const sectionArray = []
+
+const fillSectionArray = ()=>{
+    sectionDataArray.forEach(section =>{
+        createSection(section[0],section[1],section[2])
+    })
+}
 
 function loadTitle(){
     const titleElement = document.createElement("h2");
