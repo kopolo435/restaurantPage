@@ -40,9 +40,9 @@ function loadImage(imgSrc){
     return imgElement;
 }
 
-function loadDescription(){
+function loadDescription(description){
     const descriptionElement = document.createElement("p");
-    descriptionElement.textContent = "En BestTaste encontraras las mejores comidas que tu lengua podra disfrutar, todos nuestros platillos estan hechos bajo los estandares de la ISO 9100";
+    descriptionElement.textContent = description;
     return descriptionElement;
 }
 
