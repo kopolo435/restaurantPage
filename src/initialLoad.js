@@ -1,4 +1,4 @@
-import breakfast from './img/breakfast.jpg'
+/*import breakfast from './img/breakfast.jpg'*/
 
 const createSection = (title,description,image)=>{
     return {title,description,image}
@@ -14,11 +14,11 @@ const sectionArray = []
 
 const fillSectionArray = ()=>{
     sectionDataArray.forEach(section =>{
-        createSection(section[0],section[1],section[2])
-    })
+        sectionArray.push(createSection(section[0],section[1],section[2]));
+    });
 }
 
-function createSection(sectionInfo){
+function createSectionElement(sectionInfo){
     const  section = document.createElement("section");
 
     section.appendChild(loadTitle(sectionInfo.title));
@@ -47,9 +47,9 @@ function loadDescription(description){
 }
 
 function loadContent(content){
-    content.appendChild(loadTitle());
-    content.appendChild(loadImage());
-    content.appendChild(loadDescription());
+    sectionArray.forEach(section =>{
+        content.appendChild(createSectionElement(section));
+    });
 }
-
+fillSectionArray();
 export default loadContent;
