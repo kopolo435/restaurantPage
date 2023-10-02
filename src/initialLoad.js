@@ -18,6 +18,16 @@ const fillSectionArray = ()=>{
     })
 }
 
+function createSection(sectionInfo){
+    const  section = document.createElement("section");
+
+    section.appendChild(loadTitle(sectionInfo.title));
+    section.appendChild(loadImage(sectionInfo.image));
+    section.appendChild(loadDescription(sectionInfo.description));
+
+    return section
+}
+
 function loadTitle(){
     const titleElement = document.createElement("h2");
     titleElement.textContent = "Bienvenidos a BestTaste";
