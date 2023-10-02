@@ -62,16 +62,19 @@ h2{
 .homeContainer{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    align-items: center;
 }
 
 .homeContainer section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 90%;
 }
 
 .homeContentImg{
-    width: 50%;
+    width: 100%;
     height: auto;
+    grid-row: span 2;
 }
