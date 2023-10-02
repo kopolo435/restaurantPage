@@ -40,6 +40,7 @@ function loadTitle(title){
 function loadImage(imgSrc){
     const imgElement = new Image();
     imgElement.src = imgSrc;
+    imgElement.classList.add("homeContentImg");
     return imgElement;
 }
 
@@ -50,9 +51,12 @@ function loadDescription(description){
 }
 
 function loadContent(content){
+    const homeContent = document.createElement("div");
+    homeContent.classList.add("homeContainer");
     sectionArray.forEach(section =>{
-        content.appendChild(createSectionElement(section));
+        homeContent.appendChild(createSectionElement(section));
     });
+    content.appendChild(homeContent)
 }
 fillSectionArray();
 export default loadContent;
