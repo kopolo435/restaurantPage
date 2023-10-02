@@ -28,9 +28,9 @@ function createSection(sectionInfo){
     return section
 }
 
-function loadTitle(){
+function loadTitle(title){
     const titleElement = document.createElement("h2");
-    titleElement.textContent = "Bienvenidos a BestTaste";
+    titleElement.textContent = title;
     return titleElement;
 }
 
