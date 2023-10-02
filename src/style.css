@@ -51,3 +51,8 @@ nav{
 h2{
     color: red;
 }
+
+.homeContentImg{
+    width: 50%;
+    height: auto;
+}
