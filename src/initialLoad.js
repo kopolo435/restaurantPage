@@ -34,9 +34,9 @@ function loadTitle(title){
     return titleElement;
 }
 
-function loadImage(){
+function loadImage(imgSrc){
     const imgElement = new Image();
-    imgElement.src = breakfast;
+    imgElement.src = imgSrc;
     return imgElement;
 }
 
