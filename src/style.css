@@ -87,5 +87,10 @@ h2{
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+#buttonContainer button{
+    height: 20vh;
+    background-color: var(--salmon);
 }
