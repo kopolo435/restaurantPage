@@ -46,9 +46,11 @@ function createNavButtons(buttonName){
 }
 function loadNavBar(){
     const navBar = document.createElement("nav");
-    navBar.appendChild(createNavButtons("Home"));
-    navBar.appendChild(createNavButtons("Menu"));
-    navBar.appendChild(createNavButtons("Contact"));
+    const buttonContainer = document.createElement("div");
+    buttonContainer.appendChild(createNavButtons("Home"));
+    buttonContainer.appendChild(createNavButtons("Menu"));
+    buttonContainer.appendChild(createNavButtons("Contact"));
+    navBar.appendChild(buttonContainer);
     return navBar;
 }
 
