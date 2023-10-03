@@ -45,6 +45,7 @@ nav{
     background-color: var(--rojo);
     grid-row:2/3;
     grid-column: 1/2;
+    padding: 20px 10px;
 }
 
 #content{
@@ -78,4 +79,13 @@ h2{
     width: 100%;
     height: auto;
     grid-row: span 2;
+}
+
+#buttonContainer{
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
