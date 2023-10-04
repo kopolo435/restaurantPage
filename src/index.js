@@ -31,7 +31,7 @@ homeBtn.addEventListener("click",()=>{
     initialLoad(divContent);
     //cambiar la clase para el btn se vea escogido
     homeBtn.classList.add("activeButton");
-    homeBtn.onclick = () => window.scrollTo({top: 0});
+    window.scrollTo({top: 0});
     menuBtn.classList.remove("activeButton")
     contactBtn.classList.remove("activeButton");
 })
@@ -39,9 +39,9 @@ homeBtn.addEventListener("click",()=>{
 menuBtn.addEventListener("click",()=>{
     resetPageStatus();
     divContent.appendChild(menu.getMenuContainer());
+    window.scrollTo({top: 0});
     //cambiar la clase para el btn se vea escogido
     menuBtn.classList.add("activeButton");
-    menuBtn.onclick = () => window.scrollTo({top: 0});
     contactBtn.classList.remove("activeButton");
     homeBtn.classList.remove("activeButton");
 })
@@ -49,7 +49,7 @@ menuBtn.addEventListener("click",()=>{
 contactBtn.addEventListener("click",()=>{
     resetPageStatus();
     divContent.appendChild(contact.getContactContainer());
-    contactBtn.onclick = () => window.scrollTo({top: 0});
+    window.scrollTo({top: 0});
     contactBtn.classList.add("activeButton");
     homeBtn.classList.remove("activeButton");
     menuBtn.classList.remove("activeButton")
