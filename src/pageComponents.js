@@ -1,3 +1,6 @@
+import facebookLogo from './img/facebook-svgrepo-com.svg'
+import twitterLogo from './img/twitter-rounded-border-svgrepo-com.svg'
+import instagramLogo from './img/instagram-svgrepo-com.svg'
 function loadHeader(){
     const header = document.createElement("header");
     const titleRestaurant = document.createElement("h1");
@@ -20,8 +23,11 @@ function createRestaurantLogo(){
 
 function loadSocials(){
     const facebookIcon = new Image();
+    facebookIcon.src = facebookLogo;
     const twitterIcon = new Image();
+    twitterIcon.src = twitterLogo;
     const instagramIcon = new Image();
+    instagramIcon.src = instagramLogo;
     const socialsContainer = document.createElement("div");
 
     socialsContainer.setAttribute("id","socials");
