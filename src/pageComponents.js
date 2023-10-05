@@ -1,6 +1,7 @@
 import facebookLogo from './img/facebook-svgrepo-com.svg'
 import twitterLogo from './img/twitter-rounded-border-svgrepo-com.svg'
 import instagramLogo from './img/instagram-svgrepo-com.svg'
+import sushiLogo from './img/sushi-svgrepo-com.svg'
 function loadHeader(){
     const header = document.createElement("header");
     const titleRestaurant = document.createElement("h1");
@@ -15,6 +16,7 @@ function loadHeader(){
 
 function createRestaurantLogo(){
     const restaurantLogo = new Image();
+    restaurantLogo.src = sushiLogo;
     restaurantLogo.setAttribute("id","mainLogo");
     restaurantLogo.setAttribute("alt","Logo del restaurante");
 
