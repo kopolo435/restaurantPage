@@ -59,7 +59,7 @@ function createContactDescriptionDisplay(contact){
 
 function createContactElement(contact){
     const contactContainer = document.createElement("div");
-    contactContainer.setAttribute("class","contactContainer")
+    contactContainer.setAttribute("class","contacts")
     contactContainer.replaceChildren(createContactNameDisplay(contact),
         createContactDescriptionDisplay(contact),
         createContactEmailDisplay(contact),
