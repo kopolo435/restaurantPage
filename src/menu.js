@@ -50,7 +50,13 @@ function createPlatePriceDIsplay(plate){
 function createPlateImgDisplay(plate){
     const plateImg = new Image();
     plateImg.src = plate.photoURl;
-    plateImg.setAttribute("class","platePhoto");
+    if (plateImg.naturalHeight >1000){
+        plateImg.classList.add("tallPlate");
+    }
+    else{
+        plateImg.classList.add("shortPlate");
+    }
+    plateImg.classList.add("platePhoto")
     plateImg.setAttribute("alt",`Plato ${plate.name}`);
     return plateImg;
 };
